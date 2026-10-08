@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form Workshop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2>Form Pendaftaran</h2>
+
+      <nav>
+        <a href="index.html" class="active">Pendaftaran</a>
+        <a href="detail.html">Detail Pendaftar</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Form Pendaftaran</h1>
+      <p>Silakan isi data diri untuk melakukan pendaftaran.</p>
+
+      <form action="detail.html" method="GET">
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" />
+
+        <label>NIM</label>
+        <input type="text" name="nim" />
+
+        <label>Email</label>
+        <input type="email" name="email" />
+
+        <label>Program Studi</label>
+        <select name="prodi">
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Teknik Elektro">Teknik Elektro</option>
+          <option value="Teknik Sipil">Teknik Sipil</option>
+          <option value="Teknik Mesin">Teknik Mesin</option>
+        </select>
+
+        <label>Jenis Kelamin</label>
+
+        <div class="radio-group">
+          <input type="radio" name="jk" value="Laki-laki" />
+          Laki-laki
+
+          <input type="radio" name="jk" value="Perempuan" />
+          Perempuan
+        </div>
+
+        <label>Alamat</label>
+        <textarea name="alamat"></textarea>
+
+        <div class="button-area">
+          <button type="reset" class="reset">Bersihkan</button>
+          <button type="submit">Kirim Pendaftaran</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>Form Pendaftaran | Yabes Situmorang</footer>
+  </body>
+</html>
